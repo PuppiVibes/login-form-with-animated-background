@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+body {
+    margin: auto;
+    background: linear-gradient(45deg, rgb(0,140,255), rgb(85, 85, 255), rgb(111,0,255));
+    background-size: 400% 400%;
+    animation: animated-background 10s ease-in-out infinite;
+}
+
+form {
+    width: 350px;
+    height: 400px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 2px white;
+    padding: 19px;
+    margin: 150px;
+    transition: 0.5s;
+}
+
+form:hover {
+    border-radius: 17px;
+    box-shadow: 0 0 20px 2px rgb(114, 58, 146);
+    filter: brightness(1.2);
+}
+
+h2 {
+    font-family: 'lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(0, 0, 75);
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    padding: 15px 22px;
+    border: 2px solid blue;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(to right, rgb(0,140,255), rgb(111,0,255));
+    width: 80%;
+    height: 50px;
+    margin: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    color: white;
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 2px darkblue;
+    cursor: pointer;
+}
+
+@keyframes animated-background {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
